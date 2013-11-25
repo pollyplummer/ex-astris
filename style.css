@@ -1,0 +1,134 @@
+/**
+ * Theme Name:  Intrepid
+ * Theme URI:   http://untame.net/intrepid
+ * Description: A bold blogging theme.
+ * Version:     0.1.0
+ * Author:      Sarah Gooding
+ * Author URI:  http://untame.net
+ * Tags:        custom-background, custom-colors, custom-header
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template:    stargazer
+ */
+
+/*
+ * Note that the parent theme's `style.css` file is automatically loaded.  Do *not* try to load it again 
+ * with `@import`.
+ *
+ * The only custom CSS you really should add to your child theme is CSS to overwrite colors and fonts.  The 
+ * things available to be overwritten are labeled as the "Fun Zone" in the Stargazer theme's `style.css` file. 
+ * Just open it up and check it out.  Everything is clearly marked and commented so that you can understand 
+ * what you're allowed to overwrite.
+ *
+ * To be perfectly honest, you could probably get away with not adding a single line of CSS code if you really 
+ * go all out with some of the `functions.php` design options.
+ *
+ * Of course, use your best judgement with everything.  Have fun.  And, throw the rules out the window when 
+ * justified.
+ *
+ * If you make custom color/font changes that change the output of things in the post content, you'll want to 
+ * add those changes to a file called `editor-style.css` and place it within your child theme's `/css` folder. 
+ * It will automatically be loaded for you when a user is writing via the visual editor.
+ */
+
+/* ====== Primary Font ====== */
+
+.font-primary,
+body,
+input,
+textarea,
+.label-checkbox,
+.label-radio,
+.required,
+#site-description,
+#reply-title small { 
+	font-family:  'Open Sans', Arial, sans-serif;
+}
+
+/* ====== Secondary Font ====== */
+
+.font-secondary,
+dt,
+th,
+legend,
+label,
+input[type="submit"],
+input[type="reset"], 
+input[type="button"],
+button,
+select,
+option,
+.wp-caption-text,
+.gallery-caption,
+.mejs-controls,
+.entry-byline,
+.entry-footer,
+.chat-author cite,
+.chat-author,
+.comment-meta,
+.menu,
+.breadcrumb-trail,
+.media-info .prep,
+.comment-reply-link,
+.comment-reply-login,
+.clean-my-archives .day,
+.whistle-title,
+h3.widget-title {
+	font-family:  'Open Sans', Arial, sans-serif;
+}
+
+/* ====== Headlines Font ====== */
+
+.font-headlines,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Copse', serif;
+}
+
+h1 {
+font-size: 2.1rem;
+}
+
+h2 {
+font-size: 1.8rem;
+}
+
+hgroup#branding {
+margin-right: auto;
+margin-left: auto;
+}
+
+.ltr #branding {
+float: none;
+text-align: center;
+}
+
+hgroup#branding img.avatar {
+float: none;
+width: 160px;
+height: 160px;
+margin: 25px 0 0 0;
+}
+
+hgroup#branding h1, hgroup#branding h2 {
+clear: left;
+}
+
+.ltr.layout-1c #menu-social, .ltr.layout-2c-l #menu-social, .ltr.layout-2c-r #menu-social
+ {
+float: none;
+margin-right: auto;
+margin-left: auto;
+}
+
+#container>.wrap {
+opacity : 0.9;
+}
+
+h2#site-description.font-primary {
+margin-bottom: 0.5rem;
+}
