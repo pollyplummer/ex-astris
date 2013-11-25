@@ -31,7 +31,7 @@ function themeslug_theme_setup() {
 		'custom-background',
 		array(
 			'default-color' => '2d2d2d',
-			'default-image' => '',
+			'default-image' => '%2$s/images/backgrounds/green.jpg',
 		)
 	);
 
