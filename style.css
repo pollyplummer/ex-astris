@@ -132,3 +132,7 @@ opacity : 0.9;
 h2#site-description.font-primary {
 margin-bottom: 0.5rem;
 }
+
+div.entry-content a, span.entry-terms a, div.loop-nav a, a.post-edit-link, a.url.fn.n {
+color: #4183c4;
+}
