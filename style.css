@@ -126,8 +126,9 @@ margin-left: auto;
 }
 
 #container>.wrap {
-opacity : 0.9;
+background: rgba(255,255,255, 0.9);
 }
+
 
 h2#site-description.font-primary {
 margin-bottom: 0.5rem;
@@ -135,4 +136,17 @@ margin-bottom: 0.5rem;
 
 div.entry-content a, span.entry-terms a, div.loop-nav a, a.post-edit-link, a.url.fn.n {
 color: #4183c4;
+}
+
+div.entry-content blockquote {
+color: #757575;
+background-color: rgba(225, 225, 225, 1);
+margin: 0 0 1.5rem;
+padding: 1.5rem 1.5rem 0;
+border: 1px solid #cccccc;
+outline-color: rgba(227, 227, 227, .1);
+}
+
+img {
+background: #fff;
 }
