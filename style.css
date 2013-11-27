@@ -97,12 +97,11 @@ h2 {
 font-size: 1.8rem;
 }
 
-body {
+body.custom-background {
 background-repeat: no-repeat;
 background-position: top center;
 background-attachment: fixed;
 }
-
 
 hgroup#branding {
 margin-right: auto;

@@ -90,3 +90,5 @@ function themeslug_color_primary( $hex ) {
         }
  
     add_action('wp_print_styles', 'load_fonts');
+
+remove_action( 'after_setup_theme', 'stargazer_custom_header_setup', 15 );
