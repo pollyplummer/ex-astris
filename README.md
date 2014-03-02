@@ -1,7 +1,9 @@
-intrepid
+Intrepid
 ========
 
-Intrepid is a WordPress child theme for the excellent <a href="http://themehybrid.com/themes/stargazer">Stargazer</a> theme from <a href="http://themehybrid.com/">Theme Hybrid</a>. This bold theme was designed for bloggers. Make it your own with a customer header and custom background. 
+Intrepid is a WordPress child theme for the excellent <a href="http://themehybrid.com/themes/stargazer">Stargazer</a> theme from <a href="http://themehybrid.com/">Theme Hybrid</a>. This bold theme was designed for bloggers. Make it your own with a customer header and custom background. The theme supports all of the custom layouts found in the Stargazer parent theme, including  1 Column Wide, 1 Column Narrow, 2 Columns: Content / Sidebar, and 2 Columns: Sidebar / Content.
+
+A live demo is a vailable at: <a href="http://untame.net/intrepid/">untame.net/intrepid</a>
 
 <strong>Credits:</strong> 
 
