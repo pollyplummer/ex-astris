@@ -1,9 +1,9 @@
 intrepid
 ========
 
-Intrepid is a child theme for the excellent Stargazer theme from <a href="http://themehybrid.com/">Theme Hybrid</a>. This bold theme was designed for bloggers. Make it your own using the customer header and custom background. 
+Intrepid is a child theme for the excellent <a href="http://themehybrid.com/themes/stargazer">Stargazer</a> thsineme from <a href="http://themehybrid.com/">Theme Hybrid</a>. This bold theme was designed for bloggers. Make it your own with a customer header and custom background. 
 
-Credits: 
+<strong>Credits:</strong> 
 
 Font - Copse by Dan Rhatigan, available from <a href="https://www.google.com/fonts">Google Fonts</a> - <a href="http://scripts.sil.org/OFL">SIL Open Font License, 1.1</a>
 
