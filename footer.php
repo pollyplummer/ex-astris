@@ -10,8 +10,6 @@
 
 			<div class="wrap">
 
-				
-
 				<p class="credit">
 					<?php printf(
 						/* Translators: 1 is current year, 2 is site name/link, 3 is WordPress name/link, and 4 is theme name/link. */
