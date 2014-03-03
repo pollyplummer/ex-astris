@@ -17,19 +17,14 @@
 
 				<?php if ( display_header_text() ) : // If user chooses to display header text. ?>
 
-					<hgroup id="branding">
-
-<?php 
- $admin_email = get_option('admin_email');
-echo get_avatar( $admin_email, 160 ); ?>
+					<div id="branding">
+                        <?php echo get_avatar( get_option( 'admin_email' ), 320 ); ?>
 						<?php hybrid_site_title(); ?>
 						<?php hybrid_site_description(); ?>
-<?php hybrid_get_menu( 'social' ); // Loads the menu/social.php template. ?>
-					</hgroup><!-- #branding -->
+                        <?php hybrid_get_menu( 'social' ); // Loads the menu/social.php template. ?>
+					</div><!-- #branding -->
 
-				<?php endif; // End check for header text. ?>
-
-				
+				<?php endif; // End check for header text. ?>	
 
 			</header><!-- #header -->
 
