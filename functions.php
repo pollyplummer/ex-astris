@@ -1,25 +1,22 @@
 <?php
 /**
- * @package    ThemeName
- * @version    0.1.0
- * @author     Your Name <you@youremailprovider.com>
- * @copyright  Copyright (c) 2013, Your Name
- * @link       http://yoursite.com/themes/theme-slug
+ * @package    Intrepid
+ * @version    1.0.0
+ * @author     Sarah Gooding <sarah@untame.net>
+ * @copyright  Copyright (c) 2014, Sarah Gooding
+ * @link       http://themehybrid.com/themes/intrepid
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 /* Add the child theme setup function to the 'after_setup_theme' hook. */
-add_action( 'after_setup_theme', 'themeslug_theme_setup' );
+add_action( 'after_setup_theme', 'intrepid_theme_setup' );
 
 /**
- * Setup function.  All child themes should run their setup within this function.  The idea is to add/remove 
- * filters and actions after the parent theme has been set up.  This function provides you that opportunity.
- *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @return void
  */
-function themeslug_theme_setup() {
+function intrepid_theme_setup() {
 
 	/*
 	 * Add a custom background to overwrite the defaults.  Remove this section if you want to use 
@@ -32,30 +29,37 @@ function themeslug_theme_setup() {
 		array(
 			'default-color' => '2d2d2d',
 			'default-image' => '%2$s/images/backgrounds/green.jpg',
+			'default-repeat'     => 'no-repeat',
+			'default-position'   => 'center',
+			'default-position-x' => 'center',
+			'default-attachment' => 'fixed',
+  
 		)
 	);
 
 
+    /* Add suport for custom header but show none by default. */
+    add_theme_support( 'custom-header', array( 'default-image' => '' ) );  
 
 	/* Filter to add custom default backgrounds (supported by the framework). */
-	add_filter( 'hybrid_default_backgrounds', 'themeslug_default_backgrounds' );
+	add_filter( 'hybrid_default_backgrounds', 'intrepid_default_backgrounds' );
 
 	/* Add a custom default color for the "primary" color option. */
-	add_filter( 'theme_mod_color_primary', 'themeslug_color_primary' );
+	add_filter( 'theme_mod_color_primary', 'intrepid_color_primary' );
+  
+    /* Add custom stylesheets. */  
+    add_action( 'wp_enqueue_scripts', 'intrepid_enqueue_styles' );
+  
+  
 }
 
 /**
- * This works just like the WordPress `register_default_headers()` function.  You're just setting up an 
- * array of backgrounds.  The following backgrounds are merely examples from the parent theme.  Please 
- * don't use them.  Use your own backgrounds.  Or, remove this section (and the `add_filter()` call earlier) 
- * if you don't want to register custom backgrounds.
- *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @param  array  $backgrounds
  * @return array
  */
-function themeslug_default_backgrounds( $backgrounds ) {
+function intrepid_default_backgrounds( $backgrounds ) {
 
 	$new_backgrounds = array(
 		'green' => array(
@@ -69,26 +73,25 @@ function themeslug_default_backgrounds( $backgrounds ) {
 }
 
 /**
- * Add a default custom color for the theme's "primary" color option.  Users can overwrite this from the 
- * theme customizer, so we want to make sure to check that there's no value before returning our custom 
- * color.  If you want to use the parent theme's default, remove this section of the code and the 
- * `add_filter()` call from earlier.  Otherwise, just plug in the 6-digit hex code for the color you'd like 
- * to use (the below is the parent theme default).
- *
- * @since  0.1.0
+ * @since  1.0.0
  * @access public
  * @param  string  $hex
  * @return string
  */
-function themeslug_color_primary( $hex ) {
+function intrepid_color_primary( $hex ) {
 	return $hex ? $hex : '111111';
 }
 
-    function load_fonts() {
+
+/**
+* Loads custom stylesheets for the theme.
+* 
+* @since  1.0.0
+* @access public
+* @return void
+*/
+
+function intrepid_enqueue_styles() {
             wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Copse');
             wp_enqueue_style( 'googleFonts');
         }
- 
-    add_action('wp_print_styles', 'load_fonts');
-
-remove_action( 'after_setup_theme', 'stargazer_custom_header_setup', 15 );
