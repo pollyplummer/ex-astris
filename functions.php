@@ -92,6 +92,6 @@ function ex_astris_color_primary( $hex ) {
 */
 
 function ex_astris_enqueue_styles() {
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Copse');
+            wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Copse');
             wp_enqueue_style( 'googleFonts');
         }
