@@ -28,7 +28,7 @@ function ex_astris_theme_setup() {
 		'custom-background',
 		array(
 			'default-color' => '2d2d2d',
-			'default-image' => '%2$s/images/backgrounds/green.jpg',
+			'default-image' => '%2$s/images/backgrounds/mountain.jpg',
 			'default-repeat'     => 'no-repeat',
 			'default-position'   => 'center',
 			'default-position-x' => 'center',
@@ -63,8 +63,8 @@ function ex_astris_default_backgrounds( $backgrounds ) {
 
 	$new_backgrounds = array(
 		'green' => array(
-			'url'           => '%2$s/images/backgrounds/green.jpg',
-			'thumbnail_url' => '%2$s/images/backgrounds/green-thumb.jpg',
+			'url'           => '%2$s/images/backgrounds/mountain.jpg',
+			'thumbnail_url' => '%2$s/images/backgrounds/mountain-thumb.jpg',
 		),
 
 	);

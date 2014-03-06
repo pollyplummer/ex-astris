@@ -9,4 +9,5 @@ A live demo is available at: <a href="http://untame.net/ex-astris/">untame.net/e
 
 Font - Copse by Dan Rhatigan, available from <a href="https://www.google.com/fonts">Google Fonts</a> - <a href="http://scripts.sil.org/OFL">SIL Open Font License, 1.1</a>
 
-Default background image - "<a href="http://www.flickr.com/photos/zanthia/4290315489/">green</a>" - landscape near Hekla (Iceland) - by Chris Zielecki - <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a> license
+Default background image - "<a href="http://pixabay.com/en/allg%C3%A4u-spring-lowenzahnwiese-50653/">Allgäu Spring Lowenzahnwiese Mountains</a>" - by flyupmike - <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0 Universal (CC0 1.0) 
+Public Domain Dedication</a> license
